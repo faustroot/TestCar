@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D4478C41F7EBE0D00C0CA7E /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4478C31F7EBE0D00C0CA7E /* TCMainViewController.swift */; };
+		6D4478C71F7EBE8300C0CA7E /* TCDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4478C61F7EBE8300C0CA7E /* TCDataSourceProtocol.swift */; };
+		6D4478C91F7EBFD900C0CA7E /* TCMainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4478C81F7EBFD900C0CA7E /* TCMainDataSource.swift */; };
 		6DB4ADCF1F7EB80100D03D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4ADCE1F7EB80100D03D90 /* AppDelegate.swift */; };
-		6DB4ADD11F7EB80100D03D90 /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4ADD01F7EB80100D03D90 /* TCMainViewController.swift */; };
 		6DB4ADD41F7EB80100D03D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB4ADD21F7EB80100D03D90 /* Main.storyboard */; };
 		6DB4ADD61F7EB80100D03D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB4ADD51F7EB80100D03D90 /* Assets.xcassets */; };
 		6DB4ADD91F7EB80100D03D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB4ADD71F7EB80100D03D90 /* LaunchScreen.storyboard */; };
@@ -28,9 +30,11 @@
 
 /* Begin PBXFileReference section */
 		4206F12D8981F79E2B317423 /* Pods-TestCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCar/Pods-TestCar.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4478C31F7EBE0D00C0CA7E /* TCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
+		6D4478C61F7EBE8300C0CA7E /* TCDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCDataSourceProtocol.swift; sourceTree = "<group>"; };
+		6D4478C81F7EBFD900C0CA7E /* TCMainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainDataSource.swift; sourceTree = "<group>"; };
 		6DB4ADCB1F7EB80100D03D90 /* TestCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB4ADCE1F7EB80100D03D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DB4ADD01F7EB80100D03D90 /* TCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
 		6DB4ADD31F7EB80100D03D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DB4ADD51F7EB80100D03D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DB4ADD81F7EB80100D03D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +82,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6D4478BF1F7EBC3400C0CA7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D4478C21F7EBE0D00C0CA7E /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6D4478C21F7EBE0D00C0CA7E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6D4478C31F7EBE0D00C0CA7E /* TCMainViewController.swift */,
+				6D4478C81F7EBFD900C0CA7E /* TCMainDataSource.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6D4478C51F7EBE5C00C0CA7E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6D4478C61F7EBE8300C0CA7E /* TCDataSourceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6D4478CA1F7EC6A800C0CA7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6DB4ADC21F7EB80100D03D90 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +137,10 @@
 		6DB4ADCD1F7EB80100D03D90 /* TestCar */ = {
 			isa = PBXGroup;
 			children = (
+				6D4478CA1F7EC6A800C0CA7E /* Models */,
+				6D4478C51F7EBE5C00C0CA7E /* Protocols */,
+				6D4478BF1F7EBC3400C0CA7E /* Controllers */,
 				6DB4ADCE1F7EB80100D03D90 /* AppDelegate.swift */,
-				6DB4ADD01F7EB80100D03D90 /* TCMainViewController.swift */,
 				6DB4ADD21F7EB80100D03D90 /* Main.storyboard */,
 				6DB4ADD51F7EB80100D03D90 /* Assets.xcassets */,
 				6DB4ADD71F7EB80100D03D90 /* LaunchScreen.storyboard */,
@@ -274,7 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB4ADD11F7EB80100D03D90 /* TCMainViewController.swift in Sources */,
+				6D4478C91F7EBFD900C0CA7E /* TCMainDataSource.swift in Sources */,
+				6D4478C71F7EBE8300C0CA7E /* TCDataSourceProtocol.swift in Sources */,
+				6D4478C41F7EBE0D00C0CA7E /* TCMainViewController.swift in Sources */,
 				6DB4ADCF1F7EB80100D03D90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
