@@ -9,17 +9,37 @@
 import Foundation
 import AFNetworking
 
-class TCMainDataSource: TCDataSourceProtocol
+class TCMainDataSource: TCMainDataSourceProtocol
 {
-	//MARK: - Constants
-	private let kURLString = "http://www.codetalk.de/cars.json"
+	enum TCMainDataSourceError : Error
+	{
+		case ParsingJson
+		case ParsingJsonItem
+		
+		func localazedDescription() -> String
+		{
+			switch self
+			{
+				case .ParsingJson:
+					return "Json has wrong format"
+
+				case .ParsingJsonItem:
+					return "Json item has wrong format"
+			}
+		}
+	}
+	
+	enum Keys
+	{
+		static let Url = "http://www.codetalk.de/cars.json"
+	}
 
 	//MARK: - Propertys
-	private var loadedItems = [AnyClass]()
+	private var loadedItems = [TCCarModel]()
 	private let sessionManager: AFHTTPSessionManager
 
 	//MARK: - Getters
-	var items: [AnyClass]
+	var items: [TCCarModel]
 	{
 		return self.loadedItems
 	}
@@ -34,22 +54,42 @@ class TCMainDataSource: TCDataSourceProtocol
 	func loadData(_ aComplettion: @escaping (Error?) -> ())
 	{
 		self.sessionManager.get(
-			self.kURLString,
+			TCMainDataSource.Keys.Url,
 			parameters: nil,
 			progress: nil,
 			success:
 				{
 					(anOperation, aResponseObject) in
-					// build items
-					aComplettion(nil)
+					
+					guard let responseJSON = aResponseObject as? [[String : Any]] else
+					{
+						aComplettion(TCMainDataSourceError.ParsingJson)
+						return
+					}
+					self.buildItemsFrom(json: responseJSON, completion: aComplettion)
 				},
 			failure:
 				{
 					(anOperation, anError) in
 
 					aComplettion(anError)
-				}
-			)
+				})
+	}
+
+	//MARK: - Helpers
+	func buildItemsFrom(json aJSON: [[String : Any]], completion aComplettion: @escaping (Error?) -> ())
+	{
+		for JSONItem in aJSON
+		{
+			guard let item = TCCarModel(json: JSONItem) else
+			{
+				aComplettion(TCMainDataSourceError.ParsingJsonItem)
+				return
+			}
+			
+			self.loadedItems.append(item)
+		}
 		
+		aComplettion(nil)
 	}
 }

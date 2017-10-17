@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0A3CD71F7FAD1E00DA82E5 /* TCCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CD61F7FAD1E00DA82E5 /* TCCarModel.swift */; };
+		6D0A3CE01F801B8400DA82E5 /* TCMainChildViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CDF1F801B8400DA82E5 /* TCMainChildViewControllerProtocol.swift */; };
+		6D0A3CE61F801EA000DA82E5 /* TCListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CE31F801EA000DA82E5 /* TCListViewController.swift */; };
+		6D0A3CE71F801EA000DA82E5 /* TCMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CE51F801EA000DA82E5 /* TCMapViewController.swift */; };
+		6D0A3CE91F81024400DA82E5 /* TCMainDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CE81F81024300DA82E5 /* TCMainDataSourceProtocol.swift */; };
+		6D0A3CEF1F8105E500DA82E5 /* TCCarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CEE1F8105E500DA82E5 /* TCCarDetailView.swift */; };
+		6D0A3CF11F8105F700DA82E5 /* TCCarDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0A3CF01F8105F700DA82E5 /* TCCarDetailView.xib */; };
+		6D0A3CF61F8106BE00DA82E5 /* UIViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CF51F8106BE00DA82E5 /* UIViewAdditions.swift */; };
+		6D0A3CF81F817A8100DA82E5 /* TCListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A3CF71F817A8100DA82E5 /* TCListTableViewCell.swift */; };
 		6D4478C41F7EBE0D00C0CA7E /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4478C31F7EBE0D00C0CA7E /* TCMainViewController.swift */; };
-		6D4478C71F7EBE8300C0CA7E /* TCDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4478C61F7EBE8300C0CA7E /* TCDataSourceProtocol.swift */; };
 		6D4478C91F7EBFD900C0CA7E /* TCMainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4478C81F7EBFD900C0CA7E /* TCMainDataSource.swift */; };
 		6DB4ADCF1F7EB80100D03D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4ADCE1F7EB80100D03D90 /* AppDelegate.swift */; };
 		6DB4ADD41F7EB80100D03D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB4ADD21F7EB80100D03D90 /* Main.storyboard */; };
@@ -30,8 +38,16 @@
 
 /* Begin PBXFileReference section */
 		4206F12D8981F79E2B317423 /* Pods-TestCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCar/Pods-TestCar.debug.xcconfig"; sourceTree = "<group>"; };
+		6D0A3CD61F7FAD1E00DA82E5 /* TCCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCarModel.swift; sourceTree = "<group>"; };
+		6D0A3CDF1F801B8400DA82E5 /* TCMainChildViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainChildViewControllerProtocol.swift; sourceTree = "<group>"; };
+		6D0A3CE31F801EA000DA82E5 /* TCListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCListViewController.swift; sourceTree = "<group>"; };
+		6D0A3CE51F801EA000DA82E5 /* TCMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCMapViewController.swift; sourceTree = "<group>"; };
+		6D0A3CE81F81024300DA82E5 /* TCMainDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCMainDataSourceProtocol.swift; sourceTree = "<group>"; };
+		6D0A3CEE1F8105E500DA82E5 /* TCCarDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCCarDetailView.swift; sourceTree = "<group>"; };
+		6D0A3CF01F8105F700DA82E5 /* TCCarDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCCarDetailView.xib; sourceTree = "<group>"; };
+		6D0A3CF51F8106BE00DA82E5 /* UIViewAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAdditions.swift; sourceTree = "<group>"; };
+		6D0A3CF71F817A8100DA82E5 /* TCListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCListTableViewCell.swift; sourceTree = "<group>"; };
 		6D4478C31F7EBE0D00C0CA7E /* TCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
-		6D4478C61F7EBE8300C0CA7E /* TCDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCDataSourceProtocol.swift; sourceTree = "<group>"; };
 		6D4478C81F7EBFD900C0CA7E /* TCMainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainDataSource.swift; sourceTree = "<group>"; };
 		6DB4ADCB1F7EB80100D03D90 /* TestCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB4ADCE1F7EB80100D03D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +98,66 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6D0A3CDE1F801B4F00DA82E5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6D0A3CE81F81024300DA82E5 /* TCMainDataSourceProtocol.swift */,
+				6D0A3CDF1F801B8400DA82E5 /* TCMainChildViewControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6D0A3CE11F801EA000DA82E5 /* ChildViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D0A3CE21F801EA000DA82E5 /* List */,
+				6D0A3CE41F801EA000DA82E5 /* Map */,
+			);
+			path = ChildViewControllers;
+			sourceTree = "<group>";
+		};
+		6D0A3CE21F801EA000DA82E5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6D0A3CE31F801EA000DA82E5 /* TCListViewController.swift */,
+				6D0A3CF71F817A8100DA82E5 /* TCListTableViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6D0A3CE41F801EA000DA82E5 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6D0A3CE51F801EA000DA82E5 /* TCMapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		6D0A3CEA1F81056600DA82E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D0A3CED1F8105E500DA82E5 /* CarDetail */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D0A3CED1F8105E500DA82E5 /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6D0A3CEE1F8105E500DA82E5 /* TCCarDetailView.swift */,
+				6D0A3CF01F8105F700DA82E5 /* TCCarDetailView.xib */,
+			);
+			path = CarDetail;
+			sourceTree = "<group>";
+		};
+		6D0A3CF41F8106A000DA82E5 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				6D0A3CF51F8106BE00DA82E5 /* UIViewAdditions.swift */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 		6D4478BF1F7EBC3400C0CA7E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,23 +169,18 @@
 		6D4478C21F7EBE0D00C0CA7E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6D0A3CE11F801EA000DA82E5 /* ChildViewControllers */,
+				6D0A3CDE1F801B4F00DA82E5 /* Protocols */,
 				6D4478C31F7EBE0D00C0CA7E /* TCMainViewController.swift */,
 				6D4478C81F7EBFD900C0CA7E /* TCMainDataSource.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		6D4478C51F7EBE5C00C0CA7E /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				6D4478C61F7EBE8300C0CA7E /* TCDataSourceProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		6D4478CA1F7EC6A800C0CA7E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6D0A3CD61F7FAD1E00DA82E5 /* TCCarModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,8 +208,9 @@
 		6DB4ADCD1F7EB80100D03D90 /* TestCar */ = {
 			isa = PBXGroup;
 			children = (
+				6D0A3CF41F8106A000DA82E5 /* Additions */,
+				6D0A3CEA1F81056600DA82E5 /* Views */,
 				6D4478CA1F7EC6A800C0CA7E /* Models */,
-				6D4478C51F7EBE5C00C0CA7E /* Protocols */,
 				6D4478BF1F7EBC3400C0CA7E /* Controllers */,
 				6DB4ADCE1F7EB80100D03D90 /* AppDelegate.swift */,
 				6DB4ADD21F7EB80100D03D90 /* Main.storyboard */,
@@ -247,6 +319,7 @@
 				6DB4ADD91F7EB80100D03D90 /* LaunchScreen.storyboard in Resources */,
 				6DB4ADD61F7EB80100D03D90 /* Assets.xcassets in Resources */,
 				6DB4ADD41F7EB80100D03D90 /* Main.storyboard in Resources */,
+				6D0A3CF11F8105F700DA82E5 /* TCCarDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +385,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0A3CE71F801EA000DA82E5 /* TCMapViewController.swift in Sources */,
 				6D4478C91F7EBFD900C0CA7E /* TCMainDataSource.swift in Sources */,
-				6D4478C71F7EBE8300C0CA7E /* TCDataSourceProtocol.swift in Sources */,
+				6D0A3CEF1F8105E500DA82E5 /* TCCarDetailView.swift in Sources */,
+				6D0A3CD71F7FAD1E00DA82E5 /* TCCarModel.swift in Sources */,
+				6D0A3CF61F8106BE00DA82E5 /* UIViewAdditions.swift in Sources */,
+				6D0A3CE91F81024400DA82E5 /* TCMainDataSourceProtocol.swift in Sources */,
+				6D0A3CE01F801B8400DA82E5 /* TCMainChildViewControllerProtocol.swift in Sources */,
 				6D4478C41F7EBE0D00C0CA7E /* TCMainViewController.swift in Sources */,
+				6D0A3CE61F801EA000DA82E5 /* TCListViewController.swift in Sources */,
+				6D0A3CF81F817A8100DA82E5 /* TCListTableViewCell.swift in Sources */,
 				6DB4ADCF1F7EB80100D03D90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJUS5TE5X8;
 				INFOPLIST_FILE = TestCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TC.TestCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,6 +569,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJUS5TE5X8;
 				INFOPLIST_FILE = TestCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TC.TestCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";

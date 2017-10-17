@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TCCarDetailView" customModule="TestCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_car" translatesAutoresizingMaskIntoConstraints="NO" id="89k-84-UcM">
+                    <rect key="frame" x="8" y="10" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="USc-28-qeY"/>
+                        <constraint firstAttribute="width" constant="80" id="uHH-ND-VbL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="BMW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3X-P6-eG0">
+                    <rect key="frame" x="94" y="10" width="41.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-oo-GjO">
+                    <rect key="frame" x="94" y="33" width="68.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transmission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhb-qa-Xh3">
+                    <rect key="frame" x="94" y="52" width="89" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-ZU-tcJ">
+                    <rect key="frame" x="170" y="31" width="24" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDC-3b-XXc">
+                    <rect key="frame" x="191" y="50" width="15" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsP-RY-VAj">
+                    <rect key="frame" x="143.5" y="10" width="139.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="89k-84-UcM" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="3Hj-jF-RBh"/>
+                <constraint firstItem="W3X-P6-eG0" firstAttribute="leading" secondItem="89k-84-UcM" secondAttribute="trailing" constant="6" id="3JY-8f-zWD"/>
+                <constraint firstItem="bpK-ZU-tcJ" firstAttribute="leading" secondItem="eXh-oo-GjO" secondAttribute="trailing" constant="7.5" id="7Ea-Fx-FLY"/>
+                <constraint firstItem="89k-84-UcM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="87x-7L-bg2"/>
+                <constraint firstItem="QDC-3b-XXc" firstAttribute="centerY" secondItem="vhb-qa-Xh3" secondAttribute="centerY" id="9v5-cT-SCc"/>
+                <constraint firstItem="QDC-3b-XXc" firstAttribute="leading" secondItem="vhb-qa-Xh3" secondAttribute="trailing" constant="8" id="EUk-Wm-Xba"/>
+                <constraint firstItem="bpK-ZU-tcJ" firstAttribute="centerY" secondItem="eXh-oo-GjO" secondAttribute="centerY" id="GDA-FG-zFe"/>
+                <constraint firstItem="eXh-oo-GjO" firstAttribute="top" secondItem="W3X-P6-eG0" secondAttribute="bottom" constant="2" id="IgH-NW-f8C"/>
+                <constraint firstItem="vhb-qa-Xh3" firstAttribute="top" secondItem="eXh-oo-GjO" secondAttribute="bottom" constant="2" id="KGt-ch-2Rs"/>
+                <constraint firstItem="gsP-RY-VAj" firstAttribute="leading" secondItem="W3X-P6-eG0" secondAttribute="trailing" constant="8" id="dS3-mI-WOb"/>
+                <constraint firstItem="gsP-RY-VAj" firstAttribute="top" secondItem="W3X-P6-eG0" secondAttribute="top" id="jJV-vb-2Dt"/>
+                <constraint firstItem="vhb-qa-Xh3" firstAttribute="leading" secondItem="eXh-oo-GjO" secondAttribute="leading" id="q04-Ty-n9w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gsP-RY-VAj" secondAttribute="trailing" constant="8" id="qWo-Ed-hTK"/>
+                <constraint firstItem="eXh-oo-GjO" firstAttribute="leading" secondItem="W3X-P6-eG0" secondAttribute="leading" id="qhE-7l-PAc"/>
+                <constraint firstItem="W3X-P6-eG0" firstAttribute="top" secondItem="89k-84-UcM" secondAttribute="top" id="vBd-bB-Vke"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="carFuelLevelLabel" destination="bpK-ZU-tcJ" id="bfF-Th-Gzn"/>
+                <outlet property="carMakeLabel" destination="W3X-P6-eG0" id="IuF-Ii-8ab"/>
+                <outlet property="carModelLabel" destination="gsP-RY-VAj" id="JvR-gG-CXM"/>
+                <outlet property="carPreviewImageView" destination="89k-84-UcM" id="pXV-qo-5rQ"/>
+                <outlet property="carTransmissionLabel" destination="QDC-3b-XXc" id="och-4f-lCX"/>
+            </connections>
+            <point key="canvasLocation" x="-29.5" y="-275"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="default_car" width="100" height="100"/>
+    </resources>
+</document>

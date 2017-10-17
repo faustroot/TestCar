@@ -1,5 +1,5 @@
 //
-//  TCDataSourceProtocol.swift
+//  TCMainDataSourceProtocol.swift
 //  TestCar
 //
 //  Created by Aleksandr Boev on 29.09.17.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-protocol TCDataSourceProtocol
+protocol TCMainDataSourceProtocol
 {
-	var items : [AnyClass] {get}
+	var items : [TCCarModel] {get}
+	
 	func loadData(_ aComplettion: @escaping (_ anError: Error?)->())
 }
